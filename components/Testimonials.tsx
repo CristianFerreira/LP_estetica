@@ -61,7 +61,7 @@ export function Testimonials() {
             href={googleReviewsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-chumbo/60 underline-offset-4 transition-colors hover:text-chumbo hover:underline"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-salvia underline-offset-4 transition-colors hover:text-verde hover:underline"
           >
             Ler mais avaliações no Google
             <ExternalLinkIcon />

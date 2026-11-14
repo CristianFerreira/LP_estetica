@@ -1,4 +1,6 @@
 export const whatsappNumber = "351929248425";
+export const phoneDisplay = "+351 929 248 425";
+export const phoneE164 = "+351929248425";
 
 export function whatsappHref(message: string) {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -6,13 +8,16 @@ export function whatsappHref(message: string) {
 
 export const instagramUrl = "https://www.instagram.com/esteticaby_simone/";
 export const instagramHandle = "@esteticaby_simone";
+export const siteUrl = "https://lp-estetica-eight.vercel.app";
 
-export const googleReviewsUrl =
-  "https://www.google.com/maps/search/?api=1&query=Simone+Keisman+Saúde+Estética+Vila+Nova+de+Gaia";
+// Cole aqui o link de avaliações gerado no Google Business Profile
+// (formato: https://g.page/r/.../review)
+export const googleReviewsUrl = "https://g.page/r/CVuLlG_Yte_NEBM/review";
 
 export const brand = {
   name: "Simone Keisman",
   title: "Simone Keisman | Saúde Estética",
+  legalName: "Simone Keisman - Massoterapia & Saúde Estética",
 } as const;
 
 export const hero = {
@@ -25,9 +30,20 @@ export const hero = {
   ctaMessage: "Olá! Gostaria de agendar uma avaliação.",
 } as const;
 
-export const location = "Vila Nova de Gaia, Portugal";
+export const address = {
+  streetAddress:
+    "R. Francisco Alexandre Ferreira 96A, Sala 96A, Edifício Porto Belo",
+  addressLocality: "Vila Nova de Gaia",
+  addressRegion: "Porto",
+  postalCode: "4400-469",
+  addressCountry: "PT",
+} as const;
 
-export const metadataDescription = `${hero.title} ${hero.subtitle}`;
+export const location =
+  "R. Francisco Alexandre Ferreira 96A, Sala 96A - Edifício Porto Belo, 4400-469 Vila Nova de Gaia, Portugal";
+
+export const metadataDescription =
+  "Massoterapia terapêutica, drenagem linfática e estética em Vila Nova de Gaia e Porto. Atendimento exclusivo ao público feminino no Edifício Porto Belo.";
 
 export const planCtaLabel = "Saber mais no WhatsApp";
 
