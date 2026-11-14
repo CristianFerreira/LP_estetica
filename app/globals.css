@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* A paleta clínica é sempre clara: dark deixa de seguir o sistema. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --off-white: #f6f4f1;
+  --branco: #ffffff;
+  --chumbo: #2c3338;
+  --salvia: #6f8f78;
+  --verde: #2f6b45;
+  --azul-claro: #d7e6ea;
+  --font-sans: var(--font-geist-sans);
+}
+
+@theme inline {
+  --color-off-white: var(--off-white);
+  --color-branco: var(--branco);
+  --color-chumbo: var(--chumbo);
+  --color-salvia: var(--salvia);
+  --color-verde: var(--verde);
+  --color-azul-claro: var(--azul-claro);
+  --color-background: var(--off-white);
+  --color-foreground: var(--chumbo);
+
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+@keyframes cta-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+@utility cta-pulse {
+  animation: cta-pulse 2s ease-in-out infinite;
+}
+
+body {
+  background-color: var(--off-white);
+  color: var(--chumbo);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
