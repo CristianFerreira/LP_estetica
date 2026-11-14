@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import { brand, metadataDescription } from "@/lib/site";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-PT"
       className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
     >
+      <GoogleTagManager gtmId="GTM-5424Z8HL" />
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
