@@ -82,12 +82,17 @@ export type Plan = {
   price: string;
   pricePerSession?: string;
   description?: string;
+  duration?: string;
   originalPrice?: string;
   badge?: string;
   savings?: string;
   featured?: boolean;
   validity?: string;
   extraPerk?: string;
+  secondaryOption?: {
+    label: string;
+    price: string;
+  };
   whatsappMessage: string;
 };
 
@@ -95,18 +100,24 @@ export const plans: Plan[] = [
   {
     id: "sessao-unica",
     name: "Sessão Única",
+    duration: "Duração: 1 hora (60 min)",
     price: "25 €",
-    pricePerSession: "25€ / sessão",
+    pricePerSession: "25€ / sessão de 1h",
     originalPrice: "28 €",
     savings: "Poupa 3 €",
     badge: "Black November",
     featured: false,
+    secondaryOption: {
+      label: "Opção rápida (30 min)",
+      price: "20 €",
+    },
     whatsappMessage:
-      "Olá! Gostaria de marcar uma Sessão Única de massoterapia.",
+      "Olá Simone! Gostaria de agendar uma sessão única de massagem (1h por 25€ ou 30min por 20€). Qual a disponibilidade?",
   },
   {
     id: "pack-4-sessoes",
     name: "Pack 4 Sessões",
+    description: "4 sessões com duração completa de 1 hora cada.",
     price: "69 €",
     pricePerSession: "17,25€ / sessão",
     originalPrice: "80 €",
@@ -119,6 +130,7 @@ export const plans: Plan[] = [
   {
     id: "pack-6-sessoes",
     name: "Pack 6 Sessões",
+    description: "6 sessões com duração completa de 1 hora cada.",
     price: "89 €",
     pricePerSession: "14,83€ / sessão",
     originalPrice: "110 €",
