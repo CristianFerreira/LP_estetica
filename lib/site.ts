@@ -1,4 +1,4 @@
-export const whatsappNumber = "351900000000";
+export const whatsappNumber = "351929248425";
 
 export function whatsappHref(message: string) {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -22,7 +22,7 @@ export const hero = {
     "Tratamentos personalizados num ambiente acolhedor, com atenção às necessidades de cada mulher.",
   notice: "Atendimento exclusivo ao público feminino.",
   ctaLabel: "Agendar pelo WhatsApp",
-  ctaMessage: "Olá, Simone. Gostaria de agendar uma avaliação.",
+  ctaMessage: "Olá! Gostaria de agendar uma avaliação.",
 } as const;
 
 export const location = "Vila Nova de Gaia, Portugal";
@@ -41,22 +41,22 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    id: "maria",
-    name: "Maria S.",
+    id: "beatriz-santos",
+    name: "Beatriz Santos",
     quote:
-      "Cheguei com dores nas costas e saí com o corpo leve. O alívio foi imediato e o ambiente transmite uma calma rara.",
+      "Adoro e não troco as minhas sessões semanais! A Simone é uma pessoa super querida, atenciosa e dedicada, que nos faz sentir sempre bem. Já faz parte da minha rotina e não podia estar mais grata por todo o carinho. ❤️",
   },
   {
-    id: "ana",
-    name: "Ana P.",
+    id: "beatriz-machado",
+    name: "Beatriz Machado",
     quote:
-      "Depois de semanas de tensão, a sessão foi o descanso que eu precisava. Voltei a dormir melhor logo na primeira semana.",
+      "A Simone tem umas mãos de fada, saio de cada sessão renovada, relaxada e com o corpo muito mais leve. Aconselho 100%, as mãos da Simone salvam os meus dias 🩷",
   },
   {
-    id: "carla",
-    name: "Carla M.",
+    id: "marcela",
+    name: "Marcela",
     quote:
-      "Atendimento cuidadoso e um toque que realmente relaxa. Senti a dor a diminuir sem pressa e sem desconforto.",
+      "Simone!!! Eu não vivo mais sem a sua drenagem.. me sinto mais desinchada e mais disposta! Obrigada pelo carinho de sempre. ❤️🥰",
   },
 ];
 
@@ -86,31 +86,31 @@ export const plans: Plan[] = [
     badge: "Black November",
     featured: false,
     whatsappMessage:
-      "Olá! Tenho interesse na Sessão Única da Black November por 25€.",
+      "Olá! Gostaria de marcar uma Sessão Única de massoterapia.",
   },
   {
     id: "pack-4-sessoes",
     name: "Pack 4 Sessões",
-    price: "65 €",
-    pricePerSession: "16,25€ / sessão",
+    price: "69 €",
+    pricePerSession: "17,25€ / sessão",
     originalPrice: "80 €",
-    savings: "Poupa 15 €",
+    savings: "Poupa 11 €",
     badge: "Black November",
     featured: false,
     whatsappMessage:
-      "Olá! Tenho interesse no Pack 4 Sessões da Black November por 65€.",
+      "Olá! Gostaria de agendar e saber mais sobre o Pack de Sessões.",
   },
   {
     id: "pack-6-sessoes",
     name: "Pack 6 Sessões",
-    price: "85 €",
-    pricePerSession: "14,17€ / sessão",
+    price: "89 €",
+    pricePerSession: "14,83€ / sessão",
     originalPrice: "110 €",
-    savings: "Poupa 25 €",
+    savings: "Poupa 21 €",
     badge: "Melhor relação qualidade-preço",
     featured: true,
-    extraPerk: "Por apenas mais 20€, tenha mais 2 sessões.",
+    extraPerk: "Apenas +20€ em relação ao Pack de 4 sessões.",
     whatsappMessage:
-      "Olá! Tenho interesse no Pack 6 Sessões da Black November por 85€.",
+      "Olá! Gostaria de agendar e saber mais sobre o Pack de Sessões.",
   },
 ];
